@@ -5,7 +5,7 @@ I Input/Output
 
         Electricity units consumed (kWh).
 
-    2.Output
+    2. Output
 
         Energy charge.
 
@@ -24,14 +24,11 @@ II Process (Operations)
     4. Calculate the additional units by subtracting 50 from the total units if consumption exceeds 50; otherwise, assign 0.
 
     5. Calculate the energy charge using the conditional operator:
+        - If additional units exist, calculate the cost of the first 50 units at 1.50 birr each and the additional units at 2.00 birr each.
+        - Otherwise, calculate the cost of all consumed units at 1.50 birr each.
+    6. Calculate the total bill by adding the energy charge and service charge.
 
-    6. If additional units exist, calculate the cost of the first 50 units at 1.50 birr each and the additional units at 2.00 birr each.
-
-    7. Otherwise, multiply the total units by 1.50 birr.
-
-    8. Calculate the total bill by adding the energy charge and service charge.
-
-    9. Display the energy charge, service charge and total bill to two decimal places.
+    7. Display the energy charge, service charge and total bill, including the birr unit, to two decimal places.
 */
 
 // The complete C++ program
@@ -57,9 +54,9 @@ int main(){
     total = energyCharge + SERVICE_CHARGE;
 
     cout << fixed << setprecision(2);
-    cout << "The energy charge is: " << energyCharge << "birr" << endl;
-    cout << "The service charge is: " << SERVICE_CHARGE << "birr" << endl;
-    cout << "The total bill is: " << total << "birr" << endl;
+    cout << "The energy charge is: " << energyCharge << " birr" << endl;
+    cout << "The service charge is: " << SERVICE_CHARGE << " birr" << endl;
+    cout << "The total bill is: " << total << " birr" << endl;
 
     return 0;
 }

@@ -1,6 +1,4 @@
 /*
-Task 1: Student Course Total
-
 I, Input/Output
     1. Input
 

@@ -57,9 +57,9 @@ int main(){
     total = energyCharge + SERVICE_CHARGE;
 
     cout << fixed << setprecision(2);
-    cout << "The energy charge is: " << energyCharge << endl;
-    cout << "The service charge is: " << SERVICE_CHARGE << endl;
-    cout << "The total bill is: " << total << endl;
+    cout << "The energy charge is: " << energyCharge << "birr" << endl;
+    cout << "The service charge is: " << SERVICE_CHARGE << "birr" << endl;
+    cout << "The total bill is: " << total << "birr" << endl;
 
     return 0;
 }

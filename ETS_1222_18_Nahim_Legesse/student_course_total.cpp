@@ -3,16 +3,17 @@
 using namespace std;
 
 int main()
-{
-    
+{    
     const double ASSIGNMENT_WEIGHT = 0.20;
     const double MIDTERM_WEIGHT = 0.30;
     const double FINAL_WEIGHT = 0.50;
     const double PASS_MARK = 50.0;
 
+
     
     double assignment, midterm, finalExam, total;
 
+    
     
     cout << "Enter assignment mark (out of 100): ";
     cin >> assignment;

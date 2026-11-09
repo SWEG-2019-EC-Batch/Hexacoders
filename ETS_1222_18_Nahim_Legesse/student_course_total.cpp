@@ -26,7 +26,7 @@ int main()
     total = assignment * ASSIGNMENT_WEIGHT + midterm * MIDTERM_WEIGHT + finalExam * FINAL_WEIGHT;
 
     
-    const char* result = (total >= PASS_MARK) ? "Pass" : "Fail";
+    result = (total >= PASS_MARK) ? "Pass" : "Fail";
 
   
     cout << fixed << setprecision(1);

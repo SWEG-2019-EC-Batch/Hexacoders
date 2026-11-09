@@ -23,9 +23,7 @@ int main()
     cin >> finalExam;
 
     
-    total = assignment * ASSIGNMENT_WEIGHT
-          + midterm * MIDTERM_WEIGHT
-          + finalExam * FINAL_WEIGHT;
+    total = assignment * ASSIGNMENT_WEIGHT + midterm * MIDTERM_WEIGHT + finalExam * FINAL_WEIGHT;
 
     
     const char* result = (total >= PASS_MARK) ? "Pass" : "Fail";

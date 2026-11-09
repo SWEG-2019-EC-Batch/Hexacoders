@@ -46,11 +46,11 @@ int main(){
     const double PASS_MARK = 50;
 
 
-    cout << "Enter assignment mark: ";
+    cout << "Enter assignment mark (out of 100): ";
     cin >> assignment;
-    cout << "Enter midterm mark: ";
+    cout << "Enter midterm mark (out of 100): ";
     cin >> midterm;
-    cout << "Enter final exam mark: ";
+    cout << "Enter final exam mark (out of 100): ";
     cin >> final;
 
     total = (assignment * ASSIGNMENT_WEIGHT) + (midterm * MID_WEIGHT) + (final * FINAL_WEIGHT);

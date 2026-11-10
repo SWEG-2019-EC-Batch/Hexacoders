@@ -1,3 +1,23 @@
+/*
+IPO
+
+1.Input:
+   -Distance traveled.
+   -Time taken in hours.
+   -Fuel used per 100 km.
+   -Price of fuel per liter.
+
+2.Process:
+   -Divide distance by time to get the average speed.
+   -Multiply distance by fuel use and divide by 100 to get the fuel used.
+   -Multiply fuel used by fuel price to get the total fuel cost.
+
+3.Output:
+   -Display average speed in km/h.
+   -Display total fuel used in liters.
+   -Display total fuel cost in birr.
+*/
+
 #include <iostream>
 #include <iomanip>
 using namespace std;

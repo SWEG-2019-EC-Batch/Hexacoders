@@ -1,4 +1,3 @@
-
 // The complete C++ program
 #include <iostream>
 #include <iomanip>

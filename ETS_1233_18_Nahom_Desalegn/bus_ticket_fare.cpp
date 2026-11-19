@@ -12,21 +12,21 @@ int main() {
     if (seat_left <= 0) {
         cout << "all available seats have been sold,sorry! :( " << endl;
     } else {
-        // --- HOMEWORK 2: destinations, switch case with number placeholders ---
+    
         cout << "\nDestinations:" << endl;
-        cout << "1. Addis Ababa -> Adama (300 birr)" << endl;
+        cout << "1. Addis Ababa -> Mekelle (1000 birr)" << endl;
         cout << "2. Addis Ababa -> Hawassa (450 birr)" << endl;
-        cout << "3. Addis Ababa -> Bahir Dar (800 birr)" << endl;
-        cout << "4. Addis Ababa -> Mekelle (950 birr)" << endl;
-        cout << "5. Addis Ababa -> Dire Dawa (600 birr)" << endl;
+        cout << "3. Addis Ababa -> Gondar (800 birr)" << endl;
+        cout << "4. Addis Ababa -> Adama (200 birr)" << endl;
+        cout << "5. Addis Ababa -> Harar (500 birr)" << endl;
         cout << "please enter your destination number (1-5): ";
         cin >> destination;
         switch (destination) {
-            case 1: trip_fare = 300; break;
+            case 1: trip_fare = 1000 ; break;
             case 2: trip_fare = 450; break;
             case 3: trip_fare = 800; break;
-            case 4: trip_fare = 950; break;
-            case 5: trip_fare = 600; break;
+            case 4: trip_fare = 200; break;
+            case 5: trip_fare = 500; break;
             default:
                 cout << "invalid destination number!" << endl;
                 return 0;
@@ -34,24 +34,24 @@ int main() {
 
         cout << "please enter your age: ";
         cin >> age;
-        // --- HOMEWORK 1: student discount ---
+        
         cout << "are you a student? (y/n): ";
         cin >> student;
 
-        // Discount ladder: first match wins, so only ONE discount applies.
+        
         if (age < 12) {
-            trip_fare = trip_fare - trip_fare * 0.50;  // child: 50% off
+            trip_fare = trip_fare - trip_fare * 0.50; 
         } else if (student == 'y' || student == 'Y') {
-            trip_fare = trip_fare - trip_fare * 0.30;  // student: 30% off
+            trip_fare = trip_fare - trip_fare * 0.30; 
         } else if (age > 65) {
-            trip_fare = trip_fare - trip_fare * 0.25;  // senior: 25% off
+            trip_fare = trip_fare - trip_fare * 0.25; 
         }
-        // else: full fare, trip_fare stays as the route fare.
+        
 
         cout << "please enter the baggage weight: ";
         cin >> baggage_weight;
 
-        // FIX 1: calculate the baggage charge FIRST, then the total.
+        
         baggage_fare = 0;
         if (baggage_weight > 20) {
             baggage_fare = (baggage_weight - 20) * 10;
